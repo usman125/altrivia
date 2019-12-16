@@ -1,9 +1,17 @@
-<ion-header>
+<!-- <ion-header>
   <ion-toolbar>
     <ion-title>
       Tab Three
     </ion-title>
   </ion-toolbar>
-</ion-header>
+</ion-header> -->
 
-<ion-content></ion-content>
+<ion-content>
+
+  <div class="top-wrapper" (click)="selectMode($event)">
+    <a id="tutorialHomeId" class="new-game button-violet button-common-80">{{'New Game'}}</a>
+    <img class="no-friends-anim" src="../../assets/images/new-game.gif" />
+  </div>
+  {{buttonClick}}
+
+</ion-content>
