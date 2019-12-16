@@ -26,6 +26,18 @@ body,
 * {
   font-family: "Droid Arabic Kufi" !important;
 }
+
+ion-content {
+  --ion-background-color: #282828;
+}
+ion-tab-bar {
+  background-color: #646464;
+}
+ion-tab-button {
+  background: none;
+  color: #fff;
+}
+
 .tabs-top > .tabs,
 .tabs.tabs-top {
   top: 0 !important;
