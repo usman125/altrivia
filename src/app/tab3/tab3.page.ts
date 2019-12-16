@@ -7,10 +7,9 @@ import { Component } from '@angular/core';
 })
 export class Tab3Page {
 
-
   buttonClick: any = null;
 
-  constructor() {}
+  constructor() { }
 
   ngOnInit() {
     console.log("ngOnInit");
@@ -18,6 +17,10 @@ export class Tab3Page {
 
   ionViewWillEnter() {
     console.log("ionViewWillEnter");
+  }
+
+  ionViewWillLeave() {
+    this.buttonClick = null;
   }
 
   ionViewDidEnter() {
