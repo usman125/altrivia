@@ -1,0 +1,10 @@
+{
+  "HOME": {
+    "title": "home",
+    "greeting": "Hey {{name}} welcome to Ionic Acedamy!!"
+  },
+  "ALERT": {
+    "header": "error",
+    "msg": "There was a problem in your operation."
+  }
+}

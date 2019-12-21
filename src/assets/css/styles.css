@@ -370,8 +370,12 @@ ion-view.login-page .login-button:before {
   padding: 0 10px 0 0;
   color: #fff;
 }
+.friends-empty,
 .has-friend-list .friends-empty {
   text-align: center;
+}
+.friends-empty button{
+  margin-bottom: 5px;
 }
 .has-friend-list .friends-empty .button {
   margin: 0 auto 5px;

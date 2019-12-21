@@ -38,6 +38,16 @@ const routes: Routes = [
         ]
       },
       {
+        path: 'tab4',
+        children: [
+          {
+            path: '',
+            loadChildren: () =>
+              import('../chat/chat.module').then(m => m.ChatPageModule)
+          }
+        ]
+      },
+      {
         path: '',
         redirectTo: '/tabs/tab3',
         pathMatch: 'full'

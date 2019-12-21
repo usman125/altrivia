@@ -1,9 +1,19 @@
-<ion-header>
+<!-- <ion-header>
   <ion-toolbar>
     <ion-title>
       Tab Two
     </ion-title>
   </ion-toolbar>
-</ion-header>
+</ion-header> -->
 
-<ion-content></ion-content>
+<ion-content>
+
+  <div class="friends-empty padding-top">
+    <p class="caption">{{ 'game_friends_empty_caption' }}</p>
+    <button class="button button-violet button-common-80">{{ 'game_friends_empty_random' }}</button>
+    <button id="tutorialTellFriendsId"
+      class="button button-common-80 icon-left ion-social-facebook login-button">{{ 'facebook_play_with_friends' }}</button>
+    <img class="image" src="../../assets/images/tarboosh.png" />
+  </div>
+
+</ion-content>
