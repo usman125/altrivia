@@ -1,0 +1,26 @@
+.select-mode-header {
+  ion-toolbar {
+    --background: #676767;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  ion-buttons {
+    color: #fff;
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.select-mode-content {
+  button {
+    margin-bottom: 5px;
+  }
+  img {
+    padding-top: 25px;
+  }
+}

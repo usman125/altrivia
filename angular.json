@@ -39,7 +39,11 @@
                 "input": "src/global.scss"
               }
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/js/jquery.min.js",
+              "src/assets/js/wheel.js",
+              "src/assets/js/jquery.transit.js"
+            ]
           },
           "configurations": {
             "production": {

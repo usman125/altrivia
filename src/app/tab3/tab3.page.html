@@ -6,10 +6,26 @@
   </ion-toolbar>
 </ion-header> -->
 
-<ion-content>
+<ion-content class="game-wheel has-header-bar">
   <div class="top-wrapper" (click)="selectMode($event)">
-    <a id="tutorialHomeId" class="new-game button-violet button-common-80">{{'New Game'}}</a>
-    <img class="no-friends-anim" src="../../assets/images/new-game.gif" />
+    <a id="tutorialHomeId"
+      class="new-game button-violet button-common-80">{{'BUTTONS.homeـbuttonـnew_game' | translate}}</a>
+    <!-- <img class="no-friends-anim" src="../../assets/images/new-game.gif" /> -->
+    <!-- {{buttonClick}} -->
   </div>
-  {{buttonClick}}
+  <!-- <ion-loading-controller></ion-loading-controller> -->
+  <ion-list>
+    <h3 class="title">{{'CAPTION.homeـtitle_turn_finished' | translate}}</h3>
+    <div (click)="checkResult(game)" class="game-item" *ngFor="let game of dataFinished">
+      <div class="avatar"><img src={{game.opponent.avatar}} /></div>
+      <div class="game-info">
+        <h5 class="name">{{game.opponent.name}}</h5>
+        <p>{{'CAPTION.home_game_round' | translate:params}}</p>
+        <p>{{'CAPTION.home_game_timout' | translate:params}}</p>
+      </div>
+      <div class="game-score">
+        <p>{{game.me.score}} - {{game.opponent.score}}</p>
+      </div>
+    </div>
+  </ion-list>
 </ion-content>

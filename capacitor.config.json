@@ -1,6 +1,6 @@
 {
-  "appId": "io.ionic.starter",
-  "appName": "trivia",
+  "appId": "com.digify.eltrivia",
+  "appName": "eltrivia",
   "bundledWebRuntime": false,
   "npmClient": "npm",
   "webDir": "www",

@@ -1,0 +1,63 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>crown</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <!-- <ion-header-bar align-title="center" class="header-bar"> -->
+    <!-- <h1 class="title">{{game.me.round}}/25</h1> -->
+
+    <!-- <button ng-show="playerId && thread_data && !thread_data.blocked" ng-click="openChatDetails()"
+      class="ion-chatbox-working button button-clear button-light chat-button main-button" data-pack="default"
+      chat-thread='{{ game.opponent.player.id }}' data-tags="talk">
+      <span ng-show="thread_unread_count" class="badge badge-assertive">{{thread_unread_count}}</span>
+    </button> -->
+  <!-- </ion-header-bar> -->
+
+  <div class="crown-wrapper">
+    <!-- <img class="tarbosh" src="img/tarboosh.png" /> -->
+    <img class="tarbosh" src="../../../assets/images/tarboosh.png" />
+    <div class="crown-choose">{{'COMMON.crown_choose_text'| translate}}</div>
+
+    <!-- <div id="tutorialCrownCategoriesId">
+      <div class="row character-row" ng-repeat="i in [0,3]">
+        <div class="col character" ng-repeat="j in [1,2,3]">
+          <a class="category-image" ng-click="setCategoryId(i+j)" ng-show="categories.indexOf(i+j) === -1">
+            <img ng-src="../../../assets/images/category-large/1-selected.png" />
+            <img ng-src="{{'img/category-large/' + (i+j) + (categoryId == i+j ? '-selected' : '') + '.png'}}" />
+          </a>
+        </div>
+      </div>
+    </div> -->
+    <div id="tutorialCrownCategoriesId">
+      <div class="row character-row">
+        <div class="col character">
+          <a *ngFor="let i of [1,2,3,4,5,6]; let i=index;" class="category-image">
+            <img (click)="selectedImage(i)" src="../../../assets/images/category-large/{{i}}{{imageId==i ? '-selected' : ''}}.png" />
+          </a>
+          <!-- <a class="category-image">
+            <img src="../../../assets/images/category-large/2.png" />
+          </a>
+          <a class="category-image">
+            <img src="../../../assets/images/category-large/3.png" />
+          </a>
+          <a class="category-image">
+            <img src="../../../assets/images/category-large/4.png" />
+          </a>
+          <a class="category-image">
+            <img src="../../../assets/images/category-large/5.png" />
+          </a>
+          <a class="category-image">
+            <img src="../../../assets/images/category-large/6.png" />
+          </a> -->
+        </div>
+      </div>
+    </div>
+
+    <a id="tutorialCrownClickHereId" class="crown-button button button-common button-violet"
+      (click)="questionRequest()">{{'COMMON.crown_choose_category'| translate}}</a>
+
+  </div>
+
+</ion-content>

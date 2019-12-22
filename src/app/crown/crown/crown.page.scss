@@ -1,0 +1,29 @@
+.crown-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  .tarbosh {
+    max-width: 30%;
+  }
+  #tutorialCrownCategoriesId {
+    margin: 10px;
+    .row {
+      .character {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        flex-flow: wrap;
+        a {
+          width: 30%;
+          padding: 10px;
+        }
+      }
+    }
+  }
+  .button-violet {
+    background-color: #a556a9;
+    padding: 0px 15px;
+  }
+}

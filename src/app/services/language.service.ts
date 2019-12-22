@@ -17,7 +17,7 @@ export class LanguageService {
 
   setInitialLanguage() {
     let language = this.translate.getBrowserLang();
-    this.translate.setDefaultLang('de');
+    this.translate.setDefaultLang('ar');
 
     this.storage.get(LNG_KEY).then(val => {
       if (val) {
@@ -37,6 +37,7 @@ export class LanguageService {
     return [
       { text: 'English', value: 'en' },
       { text: 'German', value: 'de' },
+      { text: 'Arabic', value: 'ar' },
     ]
   }
 }
